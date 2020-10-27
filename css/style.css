@@ -68,6 +68,7 @@ textarea {
   color: white;
   text-align: center;
   width: 7%;
+  font-size: 24px;
 }
 
 .saveBtn i:hover {
@@ -77,4 +78,16 @@ textarea {
 
 #currentDay {
   font-size: 45px;
+}
+
+.time-div{
+  background-color: white;
+  color: black;
+  border: 3px solid gray;
+  border-left: none;
+
+}
+
+i{
+  font-size: 24px;
 }

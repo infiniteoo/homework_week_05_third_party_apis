@@ -47,31 +47,25 @@ for (let hour = 9; hour < 18; hour++) {
 
     // add some CSS to the time DIV - can we put this in style.css?
     timeDiv.text(finalHour + amPM);
-    timeDiv.css("background-color", "white");
-    timeDiv.css('color', 'black');
-    timeDiv.css("border", "3px solid gray");
-    timeDiv.css('border-left', 'none');
-    /* timeDiv.css("padding-left", "50px"); */
+    timeDiv.addClass('time-div');
 
     // 2nd column: events (big/wide)
     let descriptionDiv = $("<div>");
     let textAreaForDiv = $("<textarea>");
     textAreaForDiv.attr('id', 'textarea' + hour);
-    
+
     descriptionDiv.append(textAreaForDiv);
     descriptionDiv.addClass("description");
     descriptionDiv.css("width", "80%");
-    
+
 
     // creates floppy disk icon for save button
     let saveIcon = $('<i>');
-    saveIcon.css("font-size", "24px");
     saveIcon.addClass("fa fa-save");
 
     // 3rd column: save button 
     let saveDiv = $("<div>");
     saveDiv.addClass("saveBtn ");
-    saveDiv.css("font-size", "24px");
     saveDiv.attr('id', hour);
 
     // add icon to save button
@@ -79,6 +73,7 @@ for (let hour = 9; hour < 18; hour++) {
 
     // append all three individual blocks to the bigger div
     timeBlock.append(timeDiv, descriptionDiv, saveDiv);
+
     timeBlock.addClass("time-block row");
 
     if (currentHour > hour) {
@@ -105,6 +100,8 @@ for (let hour = 9; hour < 18; hour++) {
 
 
 }
+
+
 
 timeMap.forEach(function (text, key) {
 
