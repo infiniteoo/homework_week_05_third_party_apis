@@ -51,7 +51,7 @@ for (let hour = 9; hour < 18; hour++) {
     timeDiv.css('color', 'black');
     timeDiv.css("border", "3px solid gray");
     timeDiv.css('border-left', 'none');
-    timeDiv.css("padding-left", "50px");
+    /* timeDiv.css("padding-left", "50px"); */
 
     // 2nd column: events (big/wide)
     let descriptionDiv = $("<div>");
@@ -61,38 +61,41 @@ for (let hour = 9; hour < 18; hour++) {
     descriptionDiv.addClass("description");
     descriptionDiv.css("width", "80%");
 
-    // 3rd column: save button - need to add an icon still
+    // creates floppy disk icon for save button
+    let saveIcon = $('<i>');
+    saveIcon.css("font-size", "24px");
+    saveIcon.addClass("fa fa-save");
+
+    // 3rd column: save button 
     let saveDiv = $("<div>");
     saveDiv.addClass("saveBtn ");
     saveDiv.css("font-size", "24px");
-    saveDiv.text("SAVE");
-    saveDiv.css("float", "right");
-    saveDiv.css("padding-right", "75px");
     saveDiv.attr('id', hour);
 
+    // add icon to save button
+    saveDiv.append(saveIcon);
 
+    // append all three individual blocks to the bigger div
     timeBlock.append(timeDiv, descriptionDiv, saveDiv);
     timeBlock.addClass("time-block row");
 
-
-
     if (currentHour > hour) {
-        // if the hour was before the current hour, make the background grey
 
+        // if the hour has passed, make the background grey
         timeBlock.addClass("past");
 
     } else if (currentHour < hour) {
-        // if the hour happens after the current hour, make the background green
 
+        // if the hour happens in the future, make the background green
         timeBlock.addClass("future");
 
     } else {
-        // if the hour is the same hour as the current hour, make the background red
 
+        // make the background red
         timeBlock.addClass("present");
     }
 
-
+    // add completed time block to the main container 
     $("#main-contain").append(timeBlock);
 
 
@@ -113,8 +116,6 @@ timeMap.forEach(function (text, key) {
 // when the user clicks the save button on that hour it will be written to memory and persist with window reloads
 $(".saveBtn").on('click', function () {
 
-
-
     let textAreaVar = "#textarea" + (this.id);
 
 
@@ -126,14 +127,4 @@ $(".saveBtn").on('click', function () {
 
 
 });
-
-
-
-
-
-
-
-
-
-// add eventlisteners for each block so they can be editable to add an event in that hour
 
