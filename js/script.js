@@ -57,9 +57,11 @@ for (let hour = 9; hour < 18; hour++) {
     let descriptionDiv = $("<div>");
     let textAreaForDiv = $("<textarea>");
     textAreaForDiv.attr('id', 'textarea' + hour);
+    
     descriptionDiv.append(textAreaForDiv);
     descriptionDiv.addClass("description");
     descriptionDiv.css("width", "80%");
+    
 
     // creates floppy disk icon for save button
     let saveIcon = $('<i>');
@@ -88,11 +90,13 @@ for (let hour = 9; hour < 18; hour++) {
 
         // if the hour happens in the future, make the background green
         timeBlock.addClass("future");
+        textAreaForDiv.attr("placeholder", "Enter a task to complete this hour...");
 
     } else {
 
         // make the background red
         timeBlock.addClass("present");
+        textAreaForDiv.attr("placeholder", "Enter a task to complete this hour...");
     }
 
     // add completed time block to the main container 
