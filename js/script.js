@@ -56,7 +56,7 @@ for (let hour = 9; hour < 18; hour++) {
     descriptionDiv.append(textAreaForDiv);
     descriptionDiv.addClass("description");
     descriptionDiv.css("width", "80%");
-   
+
 
 
     // creates floppy disk icon for save button
@@ -67,7 +67,7 @@ for (let hour = 9; hour < 18; hour++) {
     let saveDiv = $("<div>");
     saveDiv.addClass("saveBtn ");
     saveDiv.attr('id', hour);
- 
+
 
     // add icon to save button
     saveDiv.append(saveIcon);
