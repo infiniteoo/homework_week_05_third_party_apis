@@ -25,7 +25,7 @@ I also used my first forEach interator which is so much more elegant than a clun
 
 This project brought more use of jQuery as well, and the use of a third-party API: moment.js.
 
-Moment.js is a powerful set of tools that quickly and easily allow a coder to work with time and date values.  Trying to do what can be accomplished with Moment in one line usually takes a good five or ten.
+Moment.js is a powerful set of tools that quickly and easily allow a coder to work with time and date values.  Trying to do what can be accomplished with Moment in one line usually takes a good five or ten in standard JavaScript.
 
 
 #### Here are the steps taken to achieve this complete this week's homework project:
@@ -67,21 +67,19 @@ This project can be previewed live via Github Pages at: https://infiniteoo.githu
 # Screenshots of Deployed Website
 
 ## 992px Width 
-![screenshot 992px width: intro screen](/img/992_.PNG)
-![screenshot 992px width: quiz screen](/img/992_.PNG)
-![screenshot 992px width: initials screen](/img/992_.PNG)
-![screenshot 992px width: scores screen](/img/992_.PNG)
+![screenshot 992px width](/img/992_calendar.PNG)
+![screenshot 992px width](/img/992_calendar2.PNG)
+![screenshot 992px width](/img/992_calendar3.PNG)
 
 ## 768px Width 
-![screenshot 992px width: intro screen](/img/768_.PNG)
-![screenshot 992px width: quiz screen](/img/768_.PNG)
-![screenshot 992px width: initials screen](/img/768_.PNG)
-![screenshot 992px width: scores screen](/img/768_.PNG)
+![screenshot 992px width: intro screen](/img/768_calendar.PNG)
+![screenshot 992px width: quiz screen](/img/768_calendar2.PNG)
+![screenshot 992px width: initials screen](/img/768_calendar3.PNG)
 
 ## 400px Width 
-![screenshot 992px width: intro screen](/img/400_.PNG)
-![screenshot 992px width: quiz screen](/img/400_.PNG)
-![screenshot 992px width: initials screen](/img/400_.PNG)
+![screenshot 992px width](/img/400_calendar.PNG)
+![screenshot 992px width](/img/400_calendar2.PNG)
+![screenshot 992px width](/img/400_calendar3.PNG)
 
 
 ### License
